@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootsrap project/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-foo"></link>
+
+    <!-- Add these lines in the <head> section of your HTML document -->
+    
+    <style>
+        body {
+            padding-bottom: 60px; /* Adjust body padding to accommodate the fixed footer */
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 30px 0;
+        }
+        .footer h3 {
+            color: #f8f9fa;
+        }
+        .footer p {
+            color: #adb5bd;
+        }
+        .footer a {
+            color: #f8f9fa;
+        }
+        .footer a:hover {
+            color: #17a2b8;
+        }
+        .social-icons i {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        .footer-bottom {
+            background-color: #212529;
+            color: #6c757d;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+                /* Custom styles for header links */
+                .navbar-nav .nav-link {
+            color: yellow !important;
+        }
+
+        /* Custom style for login button */
+        .signin {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .signin:hover {
+            background-color: #cc0000;
+        }
+    .bgc {
+        border-right: 1px
+        solid red;
+    }
+    .pd1 {
+        padding-left: 100px;
+    }
+    </style>
+    <title>Home Page</title>
+</head>
+<body>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"> Sign In</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="container-fluid position-sticky top-0 bg-dark text-white shadow-lg">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="F:\hardix\index.html"><img src="Images/bitXeon.png" width="200px" height="70px"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                            <ul class="navbar-nav">
+                                <li class="nav-item p-2 pt-3">
+                                    <a class="nav-link active text-yellow" aria-current="page" href="C:\Users\laxit\OneDrive\Desktop\Laxit's project\index.html">Home</a>
+                                </li>
+                                <li class="nav-item p-2 pt-3">
+                                    <a class="nav-link active text-yellow" aria-current="page" href="About.html">About Us</a>
+                                </li>
+                                <li class="nav-item p-2 pt-3">
+                                    <a class="nav-link active text-yellow" aria-current="page" href="Safety.html">Safety</a>
+                                </li>
+                                <li class="nav-item p-2 pt-3">
+                                    <a class="nav-link active text-yellow" aria-current="page" href="Careers.html">Careers</a>
+                                </li>
+                                <li class="nav-item p-2 pt-3">
+                                    <a class="nav-link active text-yellow" aria-current="page" href="Community.html">Community</a>
+                                </li>
+                                <li class="nav-item p-2 pt-3">
+                                    <a class="nav-link active text-yellow" aria-current="page" href="Wallet.html">Wallet</a>
+                                </li>
+                                <li class="nav-item p-2 pt-3">
+                                    <a class="nav-link active text-yellow" aria-current="page" href="Contact.html">Contact Us</a>
+                                </li>
+                                <li class="nav-item p-2">
+                                    <a class="nav-link active" aria-current="page" href="#"><button class="signin" data-bs-toggle="modal" data-bs-target="#exampleModal"><b>Log In</b></button></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <section class="container-fluid empty-container p-5" style="background-color: #000; height: 200px;">
+        <!-- Empty container above -->
+      </section>
+    
+      <section class="container-fluid about-us p-5" style="background-color: #000; height: 200px; color: #ffe600;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-12">
+                    <h1>Connect Wallet</h1>
+                    <p>Trade the most popular cryptocurrencies, including Bitcoin, Ethereum, and BNB.</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="w-100 download btn btn-primary"><b style="color: #fffdff;">Connect Now</b></button>
+                        </div>
+                        <div class="col-6">
+                            <button class="w-100 signin btn btn-danger"><b style="color: #ffffff;">Sign-in</b></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Empty column for spacing -->
+                <div class="col-lg-2 col-12"></div>
+                <div class="col-lg-4 col-12">
+                    <h1>New Wallet</h1>
+                    <p>Trade the most popular cryptocurrencies, including Bitcoin, Ethereum, and BNB.</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="w-100 download btn btn-primary"><b style="color: #ffffff;">Create Now</b></button>
+                        </div>
+                        <div class="col-6">
+                            <button class="w-100 signin btn btn-danger"><b style="color: #ffffff;">Sign-up</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+      <section class="container-fluid empty-container p-5" style="background-color: #000; height: 200px;">
+        <!-- Empty container above -->
+      </section>
+    
+      <section class="container-fluid empty-container p-5" style="background-color: #000; height: 200px;">
+        <!-- Empty container above -->
+      </section>
+    
+      <section class="container-fluid additional-content p-5" style="background-color: #000; color: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Container 5</h2>
+                    <!-- Set background image for Container 5 -->
+                    <div style="background-image: url('your-image-url-for-container-5.jpg'); background-size: cover; background-position: center; height: 300px;"></div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Container 6</h2>
+                    <!-- Set background image for Container 6 -->
+                    <div style="background-image: url('your-image-url-for-container-6.jpg'); background-size: cover; background-position: center; height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+      </section>
+    
+      <section class="container-fluid empty-container p-5" style="background-color: #000; height: 200px;">
+        <!-- Empty container above -->
+      </section>
+    
+      <section class="container-fluid empty-container p-5" style="background-color: #000; height: 200px;">
+        <!-- Empty container above -->
+      </section>
+    
+      <section class="container-fluid wallet-section p-5" style="background-color: #000; color: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Container 7</h2>
+                    <!-- Set background image for Container 7 -->
+                    <div style="background-image: url('your-image-url-for-container-7.jpg'); background-size: cover; background-position: center; height: 300px;"></div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Container 8</h2>
+                    <!-- Set background image for Container 8 -->
+                    <div style="background-image: url('your-image-url-for-container-8.jpg'); background-size: cover; background-position: center; height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About Us</h3>
+                    <p>HardiX</p>
+                    <p>Jodhpur, Rajasthan 342001</p>
+                    <p>dataxHardik@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media:</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
